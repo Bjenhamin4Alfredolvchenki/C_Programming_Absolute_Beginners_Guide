@@ -1,39 +1,59 @@
-// Example program #1 from Chapter 9 of
-// Absolute Beginner's Guide to C, 3rd Edition
-// File Chapter9ex1.c
-
-/* This is a sample program that demonstrates math operators, and
-the different types of division. */
-
-#include <stdio.h>
-
-main()
-{
-
-    // Two sets of equivalent variables, with one set
-    // floating-point and the other integer.
-
-    float a = 19.0;
-    float b = 5.0;
-    float floatAnswer;
-
-    int x = 19;
-    int y = 5;
-    int intAnswer;
-
-    // Using two float variable creates an answer of 3.8
-    floatAnswer = a / b;
-    printf("%.1f divided by %.1f equals %.1f\n", a, b, floatAnswer);
-
-    floatAnswer = x / y; // Take 2 creates an answer of 3.0
-    printf("%d divided by %d equals %.1f\n", x, y, floatAnswer);
-
-    // This will also be 3, as it truncates and doesn't round up
-    intAnswer = a / b;
-    printf("%.1f divided by %.1f equals %d\n", a, b, intAnswer);
-
-    intAnswer = x % y; // This calculates the remainder (4)
-    printf("%d modulous (i.e. remainder of) %d equals %d", x, y, intAnswer);
-
-    return 0;
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/1200/1300.webp");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am John Doe</h1>
+    <button>Hire me</button>
+  </div>
+</div>
+
+<p>Page Content..</p>
+
+</body>
+</html>
